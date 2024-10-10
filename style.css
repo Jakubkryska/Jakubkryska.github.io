@@ -1,0 +1,85 @@
+body {
+    background-color: rgb(33, 114, 114);
+    margin: 5%;
+    padding: 10%;
+    border: 2cap;
+}
+
+div.list{
+    font: italic small-caps bold 12px/30px Georgia, serif;
+    text-transform: uppercase;
+    text-indent: 1%;
+    text-decoration: underline;
+
+}
+div.table {
+    color: rgb(177, 177, 177);
+    text-align: center;
+    background: rgb(110, 161, 138) url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcHiRDsweok5iRwJdPzqr6T6zG9WJNmzdeNA&s") no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    
+}
+
+
+div.text {
+    border: 3px solid rgb(110, 161, 138);
+    line-height: 150%;
+
+}
+div.title {
+    text-align: center;
+}
+
+a:hover {
+    color: #2980B9;
+    text-decoration: underline;
+}
+
+.button {
+    background-color: #156648;
+    border: none;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 12px;
+    border: 2px solid black;
+  }
+  
+  .button:hover {
+    background-color: #209b6e;
+    color: black;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    div.table {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    div.table {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+}
